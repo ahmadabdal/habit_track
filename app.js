@@ -17,7 +17,6 @@ app.use(express.json());
 dotenv.config({path:'config.env'});
 
 
-//-----DB Config---------//
 
 //------Connect to Mongo--------//
 connectDatabase();
