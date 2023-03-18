@@ -1,3 +1,13 @@
-module.exports = {
-    MongoURI: 'mongodb+srv://ahmadabdal675:Abdal%40880@cluster0.ymhzoir.mongodb.net/?retryWrites=true&w=majority'    
+const mongoose = require('mongoose');
+
+
+
+const connectDatabase =()=>{
+    mongoose.connect(process.env.uri,{ useNewUrlParser: true }).then(()=>{
+        console.log(`Mongodb connected with server: `);
+    }).catch((err)=>{
+        console.log(err);
+    });
 }
+
+module.exports = connectDatabase;

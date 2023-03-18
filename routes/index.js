@@ -102,7 +102,6 @@ router.post('/dashboard', (req, res) => {
                     habit.dates = dates;
                     habit.save()
                         .then(habit => {
-                            console.log(habit);
                             res.redirect('back');
                         })
                         .catch(err => console.log(err));
@@ -123,7 +122,7 @@ router.post('/dashboard', (req, res) => {
             newHabit
                 .save()
                 .then(habit => {
-                    console.log(habit);
+                    // console.log(habit);
                     res.redirect('back');
                 })
                 .catch(err => console.log(err));
