@@ -4,8 +4,8 @@
   "description": "Habit Track app ",
   "main": "app.js",
   "scripts": {
-    "start": "HABIT_TRACK/app.js",
-    "dev": "nodemon HABIT_TRACK/app.js",
+    "start": "app.js",
+    "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
 
   },
